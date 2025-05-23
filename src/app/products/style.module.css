@@ -1,0 +1,23 @@
+.img-coursebee {
+  background-image: url("/coursebee.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-lms {
+  background-image: url("/lms.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-erp {
+  background-image: url("/erp.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-noticebee {
+  background-image: url("/noticebee.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
