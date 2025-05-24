@@ -5,9 +5,9 @@ const Affliates = () => {
   return (
     <>
       <section className="md:container text-center mx-auto p-7 font-light">
-        <h1 className="text-7xl">International Affiliates</h1>
+        <h1 className="md:text-7xl text-xl">International Affiliates</h1>
       </section>
-      <section className="grid grid-cols-4 gap-4 m-2">
+      <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 m-2">
         {affliates.map((affliate) => (
           <div
             key={affliate.name}

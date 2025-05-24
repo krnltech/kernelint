@@ -8,11 +8,11 @@ import { homeMenu } from "@/utils/constants";
 const Sectors = () => {
   return (
     <section className="w-full flex flex-col">
-      <div className="flex flex-row" id={homeMenu[0].link}>
+      <div className="flex md:flex-row flex-col" id={homeMenu[0].link}>
         <div
           className={clsx(sectorsStyle["img-management"], "grow basis-1/2")}
         />
-        <div className="grow basis-1/2 bg-[#3d5578] p-[60px]">
+        <div className="grow basis-1/2 bg-[#3d5578] text-slate-100 p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">Management Consultancy</h1>
             <p>
@@ -33,7 +33,7 @@ const Sectors = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row" id={homeMenu[1].link}>
+      <div className="flex md:flex-row flex-col" id={homeMenu[1].link}>
         <div className="grow basis-1/2 bg-[#6cbbc0] p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">
@@ -58,9 +58,9 @@ const Sectors = () => {
         </div>
         <div className={clsx(sectorsStyle["img-capacity"], "grow basis-1/2")} />
       </div>
-      <div className="flex flex-row" id={homeMenu[2].link}>
+      <div className="flex md:flex-row flex-col" id={homeMenu[2].link}>
         <div className={clsx(sectorsStyle["img-research"], "grow basis-1/2")} />
-        <div className="grow basis-1/2 bg-[#5b5b5b] p-[60px]">
+        <div className="grow basis-1/2 bg-[#5b5b5b] text-slate-100 p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">Research & Development</h1>
             <p>

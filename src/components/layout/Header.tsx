@@ -12,9 +12,9 @@ const Header = () => {
   const classNames = {
     nav: "w-100",
     ul: "flex md:flex-row flex-col",
-    li: "flex grow bg-gray-500 hover:bg-gray-400 hover:text-slate-900",
+    li: "flex grow bg-gray-500 text-slate-100 hover:bg-gray-400 hover:text-slate-900",
     link: "grow p-1 text-center outline-0",
-    menuItemLink: `bg-gray-500`,
+    menuItemLink: `bg-gray-500 text-slate-100`,
     menuItem: "p-2",
   };
 
@@ -41,12 +41,7 @@ const Header = () => {
           </li>
           <li className={classNames.li}>
             <Menu>
-              <MenuButton
-                ref={menuButtonRef}
-                className={classNames.link}
-                as={Link}
-                href="#"
-              >
+              <MenuButton ref={menuButtonRef} className={classNames.link}>
                 Sector
               </MenuButton>
               <MenuItems as="ul" anchor="bottom" className="outline-0">

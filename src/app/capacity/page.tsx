@@ -5,11 +5,11 @@ import capacityStyle from "./style.module.css";
 const CapacityPage = () => {
   return (
     <section className="w-full flex flex-col">
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div
           className={clsx(capacityStyle["img-management"], "grow basis-1/2")}
         />
-        <div className="grow basis-1/2 bg-[#3d5578] p-[60px]">
+        <div className="grow basis-1/2 bg-[#3d5578] text-slate-100 p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">Local Training</h1>
             <p>
@@ -36,7 +36,7 @@ const CapacityPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div className="grow basis-1/2 bg-[#6cbbc0] p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">
@@ -69,11 +69,11 @@ const CapacityPage = () => {
           className={clsx(capacityStyle["img-capacity"], "grow basis-1/2")}
         />
       </div>
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div
           className={clsx(capacityStyle["img-research"], "grow basis-1/2")}
         />
-        <div className="grow basis-1/2 bg-[#5b5b5b] p-[60px]">
+        <div className="grow basis-1/2 bg-[#5b5b5b] text-slate-100 p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">WORKSHOPS & CONFERENCE</h1>
             <p>

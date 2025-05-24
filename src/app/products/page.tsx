@@ -7,7 +7,7 @@ import Link from "next/link";
 const Products = () => {
   return (
     <section className="w-full flex flex-col">
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div
           className={clsx(productPageStyles["img-coursebee"], "grow basis-1/2")}
         />
@@ -30,7 +30,7 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div className="grow basis-1/2 bg-[#6cbbc0] p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-3xl">Learning Management Software</h1>
@@ -45,7 +45,7 @@ const Products = () => {
         </div>
         <div className={clsx(productPageStyles["img-lms"], "grow basis-1/2")} />
       </div>
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div className={clsx(productPageStyles["img-erp"], "grow basis-1/2")} />
         <div className="grow basis-1/2 bg-[#3d5578] p-[60px]">
           <div className="flex flex-col gap-4 text-center">
@@ -60,7 +60,7 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className="flex md:flex-row flex-col">
         <div className="grow basis-1/2 bg-[#6cbbc0] p-[60px]">
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-xl font-bold">Noticebee</h1>

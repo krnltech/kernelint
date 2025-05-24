@@ -4,9 +4,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="w-100">
-      <div id="contact" className="w-full grid grid-cols-2 gap-2">
-        <form className="aspect-square p-5 border">
+    <section className="w-full">
+      <div id="contact" className="w-full grid lg:grid-cols-2 gap-2">
+        <form className="asp p-5 border">
           <Field className="w-full p-2">
             <Label htmlFor="name" className="w-full">
               Name
