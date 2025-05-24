@@ -3,7 +3,7 @@ import React from "react";
 const ConsultalcyPage = () => {
   return (
     <section className="m-3 p-4 text-justify bg-slate-100">
-      <article className="p-8">
+      <article className="p-8 container mx-auto">
         <h1 className="text-3xl text-center">Management & consultency</h1>
         <br />
         <p>
@@ -36,7 +36,7 @@ const ConsultalcyPage = () => {
 
         <h2 className="text-2xl">1.1 Areas of Expertise</h2>
 
-        <ul>
+        <ul className="list-disc">
           <li>Consultancy Services</li>
 
           <li>Research and Development</li>
@@ -80,7 +80,7 @@ const ConsultalcyPage = () => {
 
         <h2 className="text-2xl">1.3 Research and Development</h2>
 
-        <ul>
+        <ul className="list-disc">
           <li>
             Survey/study (policy analysis, feasibility,
             baseline/end-line/socio-economic survey, midterm review, need/
@@ -112,7 +112,7 @@ const ConsultalcyPage = () => {
           1.4 Training Management (Local and Foreign)
         </h2>
 
-        <ul>
+        <ul className="list-disc">
           <li>Organizes in-country and foreign training/study tours</li>
 
           <li>
@@ -134,7 +134,7 @@ const ConsultalcyPage = () => {
         </p>
         <br />
 
-        <ul>
+        <ul className="list-disc">
           <li>
             IT; Education; Health and Hygiene; Food Safety and Quality
             Assurance; Engineering; Water Resource Management; Agribusiness and
@@ -167,7 +167,7 @@ const ConsultalcyPage = () => {
           1.6 Technologies- IT and Software Development
         </h2>
 
-        <ul>
+        <ul className="list-disc">
           <li>
             IT consulting service help competitive development providing
             framework to simplify product architecture components, reduce
@@ -199,7 +199,7 @@ const ConsultalcyPage = () => {
           Our major objectives include:
         </p>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>
             To emerge and act as supportive consulting service providing
             organization and meet up and live up to expectation of the donors,

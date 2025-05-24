@@ -10,8 +10,8 @@ const CapacityPage = () => {
           className={clsx(capacityStyle["img-management"], "grow basis-1/2")}
         />
         <div className="grow basis-1/2 bg-[#3d5578] text-slate-100 p-[60px]">
-          <div className="flex flex-col gap-4 text-center">
-            <h1 className="text-xl font-bold">Local Training</h1>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-xl font-bold text-center">Local Training</h1>
             <p>
               {
                 "We have long working experience with different ministries under the government of People's Republic of Bangladesh, Donor Agencies' funded projects, International Aid Agencies, International Consultancy Firms such as WORLD BANK, ASIAN DEVELOPMENT BANK, UNDP, SWISS CONTACT, SWISS AGENCY FOR DEVELOPMENT & COOPERATION, DANIDA, IFAD etc."
@@ -23,13 +23,13 @@ const CapacityPage = () => {
               different training events around the world.
             </p>
             <p>We organize following types of training:</p>
-            <ol>
+            <ol className="list-decimal">
               <li>Short Term Training (2-5 days) in Bangladesh & abroad.</li>
               <li>Short Term Courses ((7-14 days) in abroad.</li>
               <li>Long Term Courses (21-28 days) in abroad.</li>
             </ol>
             <p>Mode of Training:</p>
-            <ol>
+            <ol className="list-decimal">
               <li>Customized or Tailor made training program</li>
               <li>On The Shelf or Course Calendar based training program.</li>
             </ol>
@@ -38,8 +38,8 @@ const CapacityPage = () => {
       </div>
       <div className="flex md:flex-row flex-col">
         <div className="grow basis-1/2 bg-[#6cbbc0] p-[60px]">
-          <div className="flex flex-col gap-4 text-center">
-            <h1 className="text-xl font-bold">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-xl font-bold text-center">
               FOREIGN TRAINING & STUDY VISIT PROGRAMS
             </h1>
             <p>
@@ -53,13 +53,13 @@ const CapacityPage = () => {
               different training events around the world.
             </p>
             <p>We organize following types of training:</p>
-            <ol>
+            <ol className="list-decimal">
               <li>Short Term Training (2-5 days) in Bangladesh & abroad.</li>
               <li>Short Term Courses ((7-14 days) in abroad.</li>
               <li>Long Term Courses (21-28 days) in abroad.</li>
             </ol>
             <p>Mode of Training:</p>
-            <ol>
+            <ol className="list-decimal">
               <li>Customized or Tailor made training program</li>
               <li>On The Shelf or Course Calendar based training program.</li>
             </ol>
@@ -74,8 +74,10 @@ const CapacityPage = () => {
           className={clsx(capacityStyle["img-research"], "grow basis-1/2")}
         />
         <div className="grow basis-1/2 bg-[#5b5b5b] text-slate-100 p-[60px]">
-          <div className="flex flex-col gap-4 text-center">
-            <h1 className="text-xl font-bold">WORKSHOPS & CONFERENCE</h1>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-xl font-bold text-center">
+              WORKSHOPS & CONFERENCE
+            </h1>
             <p>
               {
                 "We have long working experience with different ministries under the government of People's Republic of Bangladesh, Donor Agencies' funded projects, International Aid Agencies, International Consultancy Firms such as WORLD BANK, ASIAN DEVELOPMENT BANK, UNDP, SWISS CONTACT, SWISS AGENCY FOR DEVELOPMENT & COOPERATION, DANIDA, IFAD etc."
@@ -87,13 +89,13 @@ const CapacityPage = () => {
               different training events around the world.
             </p>
             <p>We organize following types of training:</p>
-            <ol>
+            <ol className="list-decimal">
               <li>Short Term Training (2-5 days) in Bangladesh & abroad.</li>
               <li>Short Term Courses ((7-14 days) in abroad.</li>
               <li>Long Term Courses (21-28 days) in abroad.</li>
             </ol>
             <p>Mode of Training:</p>
-            <ol>
+            <ol className="list-decimal">
               <li>Customized or Tailor made training program</li>
               <li>On The Shelf or Course Calendar based training program.</li>
             </ol>

@@ -3,7 +3,7 @@ import React from "react";
 const ResearchPage = () => {
   return (
     <section className="m-3 p-4 text-justify bg-slate-100">
-      <article className="p-8">
+      <article className="p-8 container mx-auto">
         <h1 className="text-3xl text-center">Agricultural Research</h1>
         <br />
         <p>
@@ -40,7 +40,7 @@ const ResearchPage = () => {
         <br />
         <h2 className="text-2xl">RENEWABLE ENERGY</h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>Solar</li>
 
           <li>Wind</li>
@@ -61,7 +61,7 @@ const ResearchPage = () => {
         <br />
         <h2 className="text-2xl">Effective energy & Demand Management</h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>Energy optimization</li>
 
           <li>Energy System Performance Evaluation</li>
@@ -81,7 +81,7 @@ const ResearchPage = () => {
         <br />
         <h2 className="text-2xl">Energy Conservation</h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>Awareness</li>
 
           <li>Behavioral science</li>
@@ -97,7 +97,7 @@ const ResearchPage = () => {
         <br />
         <h2 className="text-2xl">Transmission & Distribution</h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>Efficiency and losses</li>
 
           <li>T&D grid modernization</li>
@@ -115,7 +115,7 @@ const ResearchPage = () => {
           Environmental & Socio-economic Impact analysis
         </h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>Energy Analysis</li>
 
           <li>Environmental Analysis</li>
@@ -166,7 +166,7 @@ const ResearchPage = () => {
           conducting following activities:
         </p>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>
             To conduct Census and inventory of losses (IOL) for all affected
             households, shops, persons and entities irrespective of title to the
@@ -221,7 +221,7 @@ const ResearchPage = () => {
         <br />
         <h2 className="text-2xl">Implementation of RAP</h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>
             Collection and Computerization of LA, Joint Verification (JV) data,
             payment list of CCL and RB payment data and reconciliation of all.
@@ -318,7 +318,7 @@ const ResearchPage = () => {
         <br />
         <h2 className="text-2xl">Implementation of RAP and LRP</h2>
         <br />
-        <ul>
+        <ul className="list-disc">
           <li>Encourage APs to explore further income earning avenues.</li>
 
           <li>
