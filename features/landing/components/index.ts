@@ -1,0 +1,9 @@
+export { Header } from "./Header";
+export { HeroSection } from "./HeroSection";
+export { AboutSection } from "./AboutSection";
+export { TrustedOrganizations } from "./TrustedOrganizations";
+export { ServicesSection } from "./ServicesSection";
+export { ExpertiseSection } from "./ExpertiseSection";
+export { ClientsSection } from "./ClientsSection";
+export { ContactSection } from "./ContactSection";
+export { Footer } from "./Footer";
