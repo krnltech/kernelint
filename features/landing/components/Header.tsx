@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 interface HeaderProps {
   scrollToContact: () => void;
@@ -51,20 +52,20 @@ export function Header({ scrollToContact }: HeaderProps) {
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a
-                href="#about"
+              <Link
+                href="/about"
                 className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
               >
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                href="/services"
                 className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
               >
                 Services
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </Link>
               <a
                 href="#expertise"
                 className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
@@ -72,12 +73,12 @@ export function Header({ scrollToContact }: HeaderProps) {
                 Expertise
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <button
-                onClick={scrollToContact}
+              <Link
+                href="/contact"
                 className="bg-primary text-primary-foreground px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-semibold"
               >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </nav>
 
@@ -104,20 +105,20 @@ export function Header({ scrollToContact }: HeaderProps) {
             >
               Home
             </a>
-            <a
-              href="#about"
+            <Link
+              href="/about"
               className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href="/services"
               className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
-            </a>
+            </Link>
             <a
               href="#expertise"
               className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
@@ -125,15 +126,13 @@ export function Header({ scrollToContact }: HeaderProps) {
             >
               Expertise
             </a>
-            <button
-              onClick={() => {
-                scrollToContact();
-                setIsMenuOpen(false);
-              }}
-              className="w-full text-left bg-primary text-primary-foreground px-3 py-2 rounded-lg hover:bg-primary/90 transition-colors font-semibold mt-4"
+            <Link
+              href="/contact"
+              className="w-full text-left bg-primary text-primary-foreground px-3 py-2 rounded-lg hover:bg-primary/90 transition-colors font-semibold mt-4 block"
+              onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
