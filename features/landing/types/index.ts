@@ -43,6 +43,12 @@ export interface TrustedOrganization {
   name: string;
 }
 
+export interface ClientLogo {
+  name: string;
+  logo: string;
+  website?: string;
+}
+
 export interface ExpertiseCategory {
   title: string;
   icon: LucideIcon;

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MapPin, Phone, Mail, Building2, Clock, User, Globe, Shield, Award, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import { Footer } from "../../features/landing/components";
 
 function PageHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -520,6 +521,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }

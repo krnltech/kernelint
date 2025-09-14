@@ -1,5 +1,5 @@
 import { Send, MessageCircle, User, Clock, ArrowRight, Sparkles } from "lucide-react";
-import { contactInfo, managementTeam } from "../data/landing-data";
+import { contactInfo } from "../data/landing-data";
 
 export function ContactSection() {
   return (
@@ -63,37 +63,6 @@ export function ContactSection() {
             </div>
           </div>
 
-          {/* Management Team */}
-          <div className="animate-fade-in-up animation-delay-400">
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-500">
-              <h4 className="text-3xl font-bold text-gray-900 mb-8 text-center flex items-center justify-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl flex items-center justify-center">
-                  <User className="text-white" size={20} />
-                </div>
-                Leadership Team
-              </h4>
-              
-              <div className="grid md:grid-cols-3 gap-6">
-                {managementTeam.map((member, index) => (
-                  <div
-                    key={index}
-                    className="group text-center p-6 bg-gradient-to-r from-primary/5 via-blue-500/5 to-purple-500/5 rounded-2xl border border-primary/10 hover:border-primary/20 transition-all duration-300 hover:scale-[1.02] animate-fade-in-up"
-                    style={{ animationDelay: `${index * 100 + 600}ms` }}
-                  >
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <User className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <p className="font-bold text-primary text-lg group-hover:text-blue-600 transition-colors duration-300 mb-1">
-                        {member.name}
-                      </p>
-                      <p className="text-sm text-gray-600 font-medium">{member.position}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* CTA Section */}

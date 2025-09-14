@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Briefcase, Target, GraduationCap, Code, Building2, Lightbulb, Users, Globe, ArrowRight, CheckCircle, Star } from "lucide-react";
 import Link from "next/link";
+import { Footer } from "../../features/landing/components";
 
 function PageHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -493,6 +494,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }

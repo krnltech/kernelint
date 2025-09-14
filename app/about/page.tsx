@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Building2, Calendar, MapPin, Users, Award, Target, Heart, Globe, TrendingUp, Shield } from "lucide-react";
 import Link from "next/link";
+import { Footer } from "../../features/landing/components";
 
 function PageHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -464,6 +465,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }

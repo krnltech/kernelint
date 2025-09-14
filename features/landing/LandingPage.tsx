@@ -8,6 +8,8 @@ import {
   ServicesSection,
   ExpertiseSection,
   ClientsSection,
+  ClientLogosSection,
+  PartnersSection,
   ContactSection,
   Footer,
 } from "./components";
@@ -25,6 +27,8 @@ export function LandingPage() {
       <AboutSection />
       <ServicesSection />
       <ExpertiseSection />
+      <ClientLogosSection />
+      <PartnersSection />
       <ContactSection />
       <Footer />
     </main>

@@ -23,26 +23,25 @@ export function AboutSection() {
             <Sparkles size={14} className="animate-pulse" />
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-            Pioneering{" "}
+            Leading{" "}
             <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Innovation
+              Software Innovation
             </span>{" "}
             Since 2013
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Since 2013, Kernel International Limited has been at the forefront of delivering 
-            comprehensive consultancy, research, training, and technology solutions across diverse sectors 
-            with unwavering commitment to excellence.
+            Kernel International Limited specializes in cutting-edge software development, AI solutions, and digital transformation services. 
+            With 16+ software engineers and 10+ AI specialists, we deliver innovative technology solutions that drive organizational success across diverse industries.
           </p>
         </div>
 
         {/* Company Stats Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 animate-fade-in-up animation-delay-300">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-20 animate-fade-in-up animation-delay-300">
           <div className="group text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:border-primary/20 hover:bg-white/90 transition-all duration-300 hover:scale-105">
             <div className="w-12 h-12 bg-gradient-to-br from-primary to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <Calendar className="text-white" size={20} />
             </div>
-            <div className="text-2xl font-bold text-primary mb-1">10+</div>
+            <div className="text-2xl font-bold text-primary mb-1">11+</div>
             <div className="text-sm text-gray-600 font-medium">Years Excellence</div>
           </div>
           
@@ -51,7 +50,7 @@ export function AboutSection() {
               <Award className="text-white" size={20} />
             </div>
             <div className="text-2xl font-bold text-green-600 mb-1">150+</div>
-            <div className="text-sm text-gray-600 font-medium">Successful Projects</div>
+            <div className="text-sm text-gray-600 font-medium">Projects</div>
           </div>
           
           <div className="group text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:border-purple-500/20 hover:bg-white/90 transition-all duration-300 hover:scale-105">
@@ -59,7 +58,23 @@ export function AboutSection() {
               <Users className="text-white" size={20} />
             </div>
             <div className="text-2xl font-bold text-purple-600 mb-1">45+</div>
-            <div className="text-sm text-gray-600 font-medium">Expert Professionals</div>
+            <div className="text-sm text-gray-600 font-medium">Experts</div>
+          </div>
+          
+          <div className="group text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:border-blue-500/20 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <Target className="text-white" size={20} />
+            </div>
+            <div className="text-2xl font-bold text-blue-600 mb-1">16+</div>
+            <div className="text-sm text-gray-600 font-medium">Software Engineers</div>
+          </div>
+          
+          <div className="group text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:border-indigo-500/20 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+            <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <Sparkles className="text-white" size={20} />
+            </div>
+            <div className="text-2xl font-bold text-indigo-600 mb-1">10+</div>
+            <div className="text-sm text-gray-600 font-medium">AI Engineers</div>
           </div>
           
           <div className="group text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:border-orange-500/20 hover:bg-white/90 transition-all duration-300 hover:scale-105">
@@ -67,7 +82,7 @@ export function AboutSection() {
               <MapPin className="text-white" size={20} />
             </div>
             <div className="text-2xl font-bold text-orange-600 mb-1">5+</div>
-            <div className="text-sm text-gray-600 font-medium">Countries Served</div>
+            <div className="text-sm text-gray-600 font-medium">Countries</div>
           </div>
         </div>
 
@@ -82,16 +97,15 @@ export function AboutSection() {
                   Our Journey
                 </h3>
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                  From a single ownership entity established in <span className="font-semibold text-primary">{companyInfo.established}</span> to a
-                  leading private limited company incorporated in <span className="font-semibold text-primary">{companyInfo.incorporated}</span>, KIL
-                  has evolved into Bangladesh's most trusted partner for
-                  government, non-government, and private sector organizations.
+                  From our establishment in <span className="font-semibold text-primary">{companyInfo.established}</span> to becoming a 
+                  leading technology company incorporated in <span className="font-semibold text-primary">{companyInfo.incorporated}</span>, KIL
+                  has transformed into Bangladesh's premier software development and AI solutions provider, 
+                  serving government, corporate, and international clients.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Like the word <span className="font-semibold text-primary">"Kernel"</span> suggests, we are at the core of
-                  management consultancy, providing essential solutions across
-                  Training Management, IT, Architecture, Engineering,
-                  Agriculture, and beyond.
+                  digital transformation, delivering cutting-edge software applications, AI-powered systems, 
+                  web platforms, mobile solutions, and comprehensive technology consulting services.
                 </p>
               </div>
 
@@ -106,7 +120,7 @@ export function AboutSection() {
                       Our Mission
                     </h4>
                     <p className="text-primary font-semibold">
-                      Institutional Framework of Excellence
+                      Digital Transformation & AI Innovation
                     </p>
                   </div>
                 </div>
@@ -131,7 +145,7 @@ export function AboutSection() {
                       Our Vision
                     </h4>
                     <p className="text-blue-600 font-semibold">
-                      Sustainable Excellence & Growth
+                      Technology Leadership & Innovation
                     </p>
                   </div>
                 </div>
@@ -184,6 +198,64 @@ export function AboutSection() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              {/* Notable Projects */}
+              <div className="bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-3xl shadow-xl border border-blue-200/50 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500">
+                <div className="text-center mb-8">
+                  <h4 className="text-3xl font-bold text-gray-900 mb-2">
+                    Notable Projects
+                  </h4>
+                  <p className="text-gray-600">Software solutions that made an impact</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-blue-600">Web-based Mobility Solution:</span> Development of centralized dashboard for monitoring average rainfall data by district and division with advanced analytics.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-blue-600">Agro-meteorological Platform:</span> Interactive mobile and web application for disseminating agricultural advisory information with real-time climate event reporting and farmer feedback system.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-blue-600">Electronic Display System:</span> Information system upgradation software for electronic display boards under online price monitoring program.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-blue-600">Smart Classroom Solutions:</span> Design and development of interactive smart classroom systems, IVCR, and multipurpose digital classroom with bill of quantities.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-blue-600">Cloud Notice Board Solution:</span> Cross-platform mobile app development for Android and iOS with cloud-based notice board management system.
+                      </p>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
 
