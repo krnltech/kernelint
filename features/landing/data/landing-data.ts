@@ -20,7 +20,6 @@ import type {
   CoreValue,
   ClientCategory,
   ContactInfo,
-  TeamMember,
   TrustedOrganization,
   ExpertiseCategory,
   ClientLogo,
@@ -208,11 +207,6 @@ export const contactInfo: ContactInfo[] = [
   },
 ];
 
-export const managementTeam: TeamMember[] = [
-  { name: "Md. Saleh Ahmed, Ph.D.", position: "Chairman" },
-  { name: "Engr. Md. Shamsuddoha", position: "Managing Director & CEO" },
-  { name: "Ms. Rukhsana Noor", position: "Director of Administration" },
-];
 
 export const clientLogos: ClientLogo[] = [
   {

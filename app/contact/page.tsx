@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, MapPin, Phone, Mail, Building2, Clock, User, Globe, Shield, Award, MessageCircle } from "lucide-react";
+import { Menu, X, MapPin, Phone, Mail, Building2, Clock, Globe, Shield, Award, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "../../features/landing/components";
 
@@ -253,66 +253,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Leadership Team Contact */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Leadership Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Connect directly with our experienced leadership for strategic discussions.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Chairman */}
-            <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <User className="text-white" size={28} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Md. Saleh Ahmed, Ph.D.</h3>
-              <p className="text-primary font-semibold mb-3">Chairman</p>
-              <div className="space-y-2 text-sm text-gray-600">
-                <p>M.Sc.(Ag), Ph.D.</p>
-                <p>40 Years Experience</p>
-                <p>Agricultural Development Expert</p>
-              </div>
-            </div>
-
-            {/* CEO */}
-            <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <User className="text-white" size={28} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Engr. Md. Shamsuddoha</h3>
-              <p className="text-blue-600 font-semibold mb-3">Managing Director & CEO</p>
-              <div className="space-y-2 text-sm text-gray-600 mb-4">
-                <p>B.Sc. in C.Sc. & IT</p>
-                <p>12 Years Experience</p>
-                <p>Technology & Management Expert</p>
-              </div>
-              <div className="bg-blue-50 p-3 rounded-lg">
-                <p className="text-xs text-blue-700 font-semibold">Primary Contact Person</p>
-                <p className="text-xs text-blue-600">+8801816338953</p>
-                <p className="text-xs text-blue-600">russ.iut03@gmail.com</p>
-              </div>
-            </div>
-
-            {/* Director */}
-            <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <User className="text-white" size={28} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ms. Rukhsana Noor</h3>
-              <p className="text-purple-600 font-semibold mb-3">Director of Administration</p>
-              <div className="space-y-2 text-sm text-gray-600">
-                <p>MBA</p>
-                <p>12 Years Experience</p>
-                <p>Business Administration Expert</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Company Registration Details */}
       <section className="py-20">

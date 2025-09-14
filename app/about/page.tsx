@@ -425,46 +425,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Management Team */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Leadership Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experienced professionals leading our organization towards excellence.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="text-white" size={28} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Md. Saleh Ahmed, Ph.D.</h3>
-              <p className="text-primary font-semibold mb-3">Chairman</p>
-              <p className="text-gray-600 text-sm">40 years of experience in agricultural development and research</p>
-            </div>
-
-            <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="text-white" size={28} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Engr. Md. Shamsuddoha</h3>
-              <p className="text-blue-600 font-semibold mb-3">Managing Director & CEO</p>
-              <p className="text-gray-600 text-sm">12 years of experience in computer science and IT management</p>
-            </div>
-
-            <div className="text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="text-white" size={28} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Ms. Rukhsana Noor</h3>
-              <p className="text-purple-600 font-semibold mb-3">Director of Administration</p>
-              <p className="text-gray-600 text-sm">12 years of experience in business administration</p>
-            </div>
-          </div>
-        </div>
-      </section>
       
       <Footer />
     </div>
