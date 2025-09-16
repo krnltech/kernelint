@@ -211,6 +211,33 @@ export function AboutSection() {
                 </div>
                 
                 <div className="space-y-4">
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-purple-200/50 hover:bg-gradient-to-r hover:from-purple-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-purple-600">AI-Powered Learning Management System:</span> Development of intelligent LMS with personalized learning paths, automated assessment, and real-time progress tracking for educational institutions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-purple-200/50 hover:bg-gradient-to-r hover:from-purple-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-purple-600">Smart Classroom Solutions:</span> Design and development of interactive smart classroom systems, IVCR, and multipurpose digital classroom with advanced interactive technologies and comprehensive bill of quantities.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-purple-200/50 hover:bg-gradient-to-r hover:from-purple-50/30 hover:to-transparent transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700 leading-relaxed">
+                        <span className="font-semibold text-purple-600">Student Information Management Platform:</span> Comprehensive web-based system for student enrollment, academic records, attendance tracking, and parent-teacher communication portal.
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
                     <div className="flex items-start gap-4">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
@@ -219,7 +246,7 @@ export function AboutSection() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
                     <div className="flex items-start gap-4">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
@@ -228,21 +255,12 @@ export function AboutSection() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
                     <div className="flex items-start gap-4">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700 leading-relaxed">
                         <span className="font-semibold text-blue-600">Electronic Display System:</span> Information system upgradation software for electronic display boards under online price monitoring program.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100/50 hover:border-blue-200/50 hover:bg-gradient-to-r hover:from-blue-50/30 hover:to-transparent transition-all duration-300">
-                    <div className="flex items-start gap-4">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-gray-700 leading-relaxed">
-                        <span className="font-semibold text-blue-600">Smart Classroom Solutions:</span> Design and development of interactive smart classroom systems, IVCR, and multipurpose digital classroom with bill of quantities.
                       </p>
                     </div>
                   </div>

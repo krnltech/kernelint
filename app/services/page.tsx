@@ -66,6 +66,13 @@ function PageHeader() {
                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary"></span>
               </Link>
               <Link
+                href="/#expertise"
+                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              >
+                Expertise
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/contact"
                 className="bg-primary text-primary-foreground px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-semibold"
               >
@@ -110,6 +117,13 @@ function PageHeader() {
               onClick={() => setIsMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              href="/#expertise"
+              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Expertise
             </Link>
             <Link
               href="/contact"
@@ -158,6 +172,48 @@ export default function ServicesPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
+            {/* AI & Software Development */}
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-500">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center">
+                  <Code className="text-white" size={28} />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900">AI & Software Development</h2>
+                  <p className="text-purple-600 font-medium">AI-Powered Digital Solutions</p>
+                </div>
+              </div>
+
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Cutting-edge AI-powered custom solutions, advanced IT consulting services and software
+                development with machine learning capabilities to help competitive development and reduce operational costs.
+              </p>
+
+              <div className="space-y-3 mb-6">
+                {[
+                  "AI-Powered Custom Solutions & Machine Learning",
+                  "Intelligent Automation & Data Analytics",
+                  "Web-based application development",
+                  "Mobile application solutions",
+                  "Database & MIS development",
+                  "Electronic display board systems",
+                  "Agro-meteorological software",
+                  "Digital infrastructure projects",
+                  "System integration services",
+                  "IT consulting & workflow management"
+                ].map((service, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="text-purple-600" size={16} />
+                    <span className="text-gray-700 text-sm">{service}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-purple-500/5 p-4 rounded-xl">
+                <p className="text-purple-600 font-semibold text-sm">AI-Driven Solutions • Modern Technology • Quality & Timeframe Focus</p>
+              </div>
+            </div>
+
             {/* Consultancy Services */}
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-500">
               <div className="flex items-center gap-4 mb-6">
@@ -169,9 +225,9 @@ export default function ServicesPage() {
                   <p className="text-primary font-medium">Professional Advisory Solutions</p>
                 </div>
               </div>
-              
+
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Kernel International Ltd. provides professional advisory services to various Public & Private organizations, 
+                Kernel International Ltd. provides professional advisory services to various Public & Private organizations,
                 National & International Organizations and NGOs/INGOs, Autonomous Organizations, and Donor Organizations.
               </p>
 
@@ -281,45 +337,6 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* IT & Software Development */}
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-500">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center">
-                  <Code className="text-white" size={28} />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900">IT & Software Development</h2>
-                  <p className="text-purple-600 font-medium">Digital Solutions</p>
-                </div>
-              </div>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Advanced IT consulting services and software development solutions to help competitive 
-                development and reduce operational costs.
-              </p>
-
-              <div className="space-y-3 mb-6">
-                {[
-                  "Web-based application development",
-                  "Mobile application solutions",
-                  "Database & MIS development",
-                  "Electronic display board systems",
-                  "Agro-meteorological software",
-                  "Digital infrastructure projects",
-                  "System integration services",
-                  "IT consulting & workflow management"
-                ].map((service, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="text-purple-600" size={16} />
-                    <span className="text-gray-700 text-sm">{service}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-purple-500/5 p-4 rounded-xl">
-                <p className="text-purple-600 font-semibold text-sm">Modern Technology • Quality & Timeframe Focus</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -483,13 +500,13 @@ export default function ServicesPage() {
               Let's discuss how our comprehensive services can help achieve your project goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-semibold inline-flex items-center gap-2">
+              <a href="mailto:contact@kernelinternational.com?subject=Contact Our Team&body=Hi, I would like to discuss my project requirements with your team." className="bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-semibold inline-flex items-center gap-2">
                 Contact Our Team
                 <ArrowRight size={18} />
-              </button>
-              <button className="border border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold">
+              </a>
+              <a href="mailto:contact@kernelinternational.com?subject=Portfolio Request&body=Hi, I would like to view your portfolio and learn more about your services." className="border border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold">
                 View Our Portfolio
-              </button>
+              </a>
             </div>
           </div>
         </div>

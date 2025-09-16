@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Sparkles, Crown } from "lucide-react";
+import { ArrowRight, Sparkles, Crown } from "lucide-react";
 import { heroStats, heroServices } from "../data/landing-data";
 
 export function HeroSection() {
@@ -45,28 +45,21 @@ export function HeroSection() {
 
             {/* Subtitle */}
             <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl animate-fade-in-up animation-delay-500">
-              KIL is a leading research, training and consulting service provider organization, 
-              delivering exceptional quality services across agriculture, IT, architecture, 
-              engineering, and beyond with 10+ years of excellence.
+              KIL is a leading research, training and consulting service provider organization,
+              delivering exceptional quality services across agriculture, <span className="text-primary font-semibold">AI-powered custom software development</span>,
+              IT, architecture, engineering, and beyond with 10+ years of excellence.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 animate-fade-in-up animation-delay-700 mb-12">
-              <button className="group bg-gradient-to-r from-primary to-blue-600 text-white px-10 py-5 rounded-full hover:shadow-xl transition-all duration-500 transform hover:scale-105 font-semibold text-lg flex items-center justify-center gap-3 relative overflow-hidden">
+              <a href="mailto:contact@kernelinternational.com" className="group bg-gradient-to-r from-primary to-blue-600 text-white px-10 py-5 rounded-full hover:shadow-xl transition-all duration-500 transform hover:scale-105 font-semibold text-lg flex items-center justify-center gap-3 relative overflow-hidden">
                 <span className="relative z-10">Start Your Project</span>
                 <ArrowRight
                   size={20}
                   className="group-hover:translate-x-2 transition-transform duration-300 relative z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </button>
-              
-              <button className="group flex items-center gap-4 text-gray-700 hover:text-primary transition-colors duration-300 px-6">
-                <div className="w-14 h-14 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-gray-200/50 group-hover:border-primary/20 group-hover:bg-primary/5 transition-all duration-300 group-hover:scale-110">
-                  <Play size={18} className="ml-1 text-primary" />
-                </div>
-                <span className="font-semibold text-lg">Watch Demo</span>
-              </button>
+              </a>
             </div>
 
             {/* Trust Indicators */}

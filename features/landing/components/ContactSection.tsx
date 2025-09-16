@@ -76,12 +76,12 @@ export function ContactSection() {
               Let's create something extraordinary together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-300 font-semibold">
+              <a href="mailto:contact@kernelinternational.com?subject=Schedule a Call&body=Hi, I would like to schedule a call to discuss my project requirements." className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-300 font-semibold text-center">
                 Schedule a Call
-              </button>
-              <button className="border border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold">
+              </a>
+              <a href="mailto:contact@kernelinternational.com?subject=Portfolio Request&body=Hi, I would like to view your portfolio and learn more about your services." className="border border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold text-center">
                 View Portfolio
-              </button>
+              </a>
             </div>
           </div>
         </div>

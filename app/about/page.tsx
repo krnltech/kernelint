@@ -66,6 +66,13 @@ function PageHeader() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
+                href="/#expertise"
+                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              >
+                Expertise
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/contact"
                 className="bg-primary text-primary-foreground px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-semibold"
               >
@@ -112,6 +119,13 @@ function PageHeader() {
               Services
             </Link>
             <Link
+              href="/#expertise"
+              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Expertise
+            </Link>
+            <Link
               href="/contact"
               className="w-full text-left bg-primary text-primary-foreground px-3 py-2 rounded-lg hover:bg-primary/90 transition-colors font-semibold mt-4 block"
               onClick={() => setIsMenuOpen(false)}
@@ -147,8 +161,9 @@ export default function AboutPage() {
               <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent"> Excellence</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Established in 2013, Kernel International Limited is a leading multi-disciplinary research, 
-              training and consulting service provider organization based in Dhaka, Bangladesh.
+              Established in 2013, KIL is a leading research, training and consulting service provider organization,
+              delivering exceptional quality services across agriculture, <span className="text-primary font-semibold">AI-powered custom software development</span>,
+              IT, architecture, engineering, and beyond with 10+ years of excellence.
             </p>
           </div>
 
@@ -204,8 +219,8 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Like the word "Kernel" suggests, our company is at the core of any management consultancy works. 
-                  KIL provides consultancy services for many different sectors such as Training Management, IT, 
-                  Architecture and Design, Engineering, Construction, Agriculture, and more.
+                  KIL provides consultancy services for many different sectors such as AI-powered Software Development, IT Solutions,
+                  Training Management, Architecture and Design, Engineering, Construction, Agriculture, and more.
                 </p>
                 <p>
                   KIL always focuses to embark upon development projects with maximum efforts and always tries to 
@@ -264,6 +279,23 @@ export default function AboutPage() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
+            {/* GO GREEN */}
+            <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 p-8 rounded-3xl border border-green-500/20 shadow-lg">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center">
+                  <Heart className="text-white" size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">GO GREEN</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                <strong>GO GREEN</strong> is our motto and we focus on sustainable development in any case of
+                consultancy services. We believe in creating solutions that benefit both our clients and the environment.
+              </p>
+              <div className="bg-green-500 text-white px-4 py-2 rounded-full inline-block text-sm font-semibold">
+                Sustainable Development Focus
+              </div>
+            </div>
+
             {/* Mission */}
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-primary/20 shadow-lg">
               <div className="flex items-center gap-4 mb-6">
@@ -275,28 +307,11 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="absolute -left-4 top-0 text-6xl text-primary/20 font-serif leading-none">"</div>
                 <p className="text-gray-700 leading-relaxed italic pl-8">
-                  To develop an institutional framework of excellence with a view to rendering research and 
-                  consulting services to government, non-government and private sector organizations. We are 
-                  committed to develop professionalism in consulting services through enhancing institutional 
+                  To develop an institutional framework of excellence with a view to rendering research and
+                  consulting services to government, non-government and private sector organizations. We are
+                  committed to develop professionalism in consulting services through enhancing institutional
                   capability and by providing experts to various development partners.
                 </p>
-              </div>
-            </div>
-
-            {/* GO GREEN */}
-            <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 p-8 rounded-3xl border border-green-500/20 shadow-lg">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center">
-                  <Heart className="text-white" size={24} />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900">GO GREEN</h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                <strong>GO GREEN</strong> is our motto and we focus on sustainable development in any case of 
-                consultancy services. We believe in creating solutions that benefit both our clients and the environment.
-              </p>
-              <div className="bg-green-500 text-white px-4 py-2 rounded-full inline-block text-sm font-semibold">
-                Sustainable Development Focus
               </div>
             </div>
           </div>
@@ -326,7 +341,7 @@ export default function AboutPage() {
               },
               {
                 title: "Multi-sector Consultancy",
-                description: "To act as a consultancy organization focused on Management Consultancy, Training, Education, Design & Architecture."
+                description: "To act as a consultancy organization focused on AI-powered Software Solutions, Management Consultancy, Training, Education, Design & Architecture."
               },
               {
                 title: "Research & Policy",

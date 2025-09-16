@@ -66,6 +66,13 @@ function PageHeader() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
+                href="/#expertise"
+                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              >
+                Expertise
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link
                 href="/contact"
                 className="text-primary font-medium relative group"
               >
@@ -111,6 +118,13 @@ function PageHeader() {
               onClick={() => setIsMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              href="/#expertise"
+              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Expertise
             </Link>
             <Link
               href="/contact"
@@ -199,7 +213,7 @@ export default function ContactPage() {
                   <Phone className="text-primary" size={18} />
                   <div>
                     <p className="font-semibold text-gray-900">Office Phone</p>
-                    <p className="text-gray-700">+88028833371</p>
+                    <p className="text-gray-700">+8801762694455</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -449,9 +463,9 @@ export default function ContactPage() {
               multi-disciplinary expertise and proven track record.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+88028833371" className="bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-semibold inline-flex items-center gap-2">
+              <a href="tel:+8801762694455" className="bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-semibold inline-flex items-center gap-2">
                 <Phone size={18} />
-                Call Now: +88028833371
+                Call Now: +8801762694455
               </a>
               <a href="mailto:contact@kernelinternational.com" className="border border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold inline-flex items-center gap-2">
                 <Mail size={18} />
