@@ -248,7 +248,7 @@ export const clientLogos: ClientLogo[] = [
   },
   {
     name: "CABI",
-    logo: "https://www.cabi.org/wp-content/uploads/2018/10/CABI_Logo_White.png",
+    logo: "https://images.seeklogo.com/logo-png/49/1/cabi-logo-png_seeklogo-497065.png",
     website: "https://www.cabi.org"
   },
   {
@@ -271,7 +271,7 @@ export const partnerLogos: ClientLogo[] = [
   },
   {
     name: "Optiontrain, Canada",
-    logo: "https://optiontrain.com/assets/images/logo-white.svg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxENCqkWmRpbf-MuSVhNEJyR0kbkgdoJJUJu2E_Zqx7qpjVIe1rFM9JfVazs5-5XsjfU&usqp=CAU",
     website: "https://optiontrain.com"
   },
   {
@@ -296,7 +296,7 @@ export const partnerLogos: ClientLogo[] = [
   },
   {
     name: "ConnectAuz, Australia",
-    logo: "https://www.connectauz.com.au/wp-content/uploads/2025/06/connect-auz-logo-white-without-Tagline.svg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uL1dn4TbjyBCR6OUjZm-bjhiNlZvfNDdPNuV-JlJBvJKRyAe_MivxV40mVtHok02WF4&usqp=CAU",
     website: "https://www.connectauz.com.au"
   }
 ];
