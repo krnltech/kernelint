@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kernel International Limited | Multi-disciplinary Research, Training & Consulting",
-  description: "KIL is a multi-disciplinary research, training and consulting service provider organization based in Dhaka, Bangladesh. Specializing in consultancy, R&D, training management, design & architecture, and IT solutions.",
+  title: "Kernel International Limited | AI-Powered Solutions, Research, Training & Consulting",
+  description: "KIL is a leading research, training and consulting service provider organization, delivering exceptional quality services across agriculture, AI-powered custom software development, IT, architecture, engineering, and beyond with 10+ years of excellence.",
 };
 
 export default function RootLayout({

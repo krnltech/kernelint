@@ -9,6 +9,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Start**: `npm start` - Starts the production server
 - **Lint**: `npm run lint` - Runs ESLint (configured to ignore during builds)
 
+## Deployment Commands
+
+- **Docker Build**: `docker-compose build` - Builds the Docker container
+- **Docker Development**: `docker-compose up -d kernel-site` - Runs application in Docker
+- **Docker Production**: `docker-compose --profile production up -d` - Runs with Nginx reverse proxy
+- **Quick Deploy**: `./deploy.sh` - Automated deployment script
+
 ## Project Architecture
 
 This is a Next.js 15 application for Kernel International Limited (KIL), a consultancy company website.
@@ -52,7 +59,44 @@ This is a Next.js 15 application for Kernel International Limited (KIL), a consu
 - TypeScript and ESLint errors ignored during builds (configured in next.config.ts)
 - Path aliases: `@/*` maps to project root
 - Turbopack enabled for faster development and builds
+- Standalone output configured for Docker deployment
+
+### Docker Configuration
+
+- Multi-stage Dockerfile for optimized production builds
+- Docker Compose with development and production profiles
+- Nginx reverse proxy for production with SSL support
+- Watchtower for automatic container updates in production
+- Health checks configured for container monitoring
 
 ### Content Management
 
 Company content is managed through structured data objects in `/features/landing/data/landing-data.ts`. This includes hero stats, services, team information, and contact details that populate the landing page sections.
+
+### Company Technical Capabilities
+
+Kernel International Limited positions itself as an "End-to-End AI Development Partner" with expertise across:
+
+**Core Technology Areas:**
+- Data Analytics & Data Science (R, Python, Dask, Google Analytics, Power BI)
+- Cloud AI Platforms (IBM Watson, Cortana Intelligence)
+- Deep Learning (TensorFlow, Keras, MLlib, FastAI, Transformers, spaCy, PyTorch)
+- Generative AI (LangChain, OpenAI)
+- DevOps & MLOps (Docker, Kubernetes, Lov, Azure ML)
+- Chatbot Development (LangChain, OpenAI)
+- AI Model Optimization (3D modeling, optimization tools)
+- Backend Development (PHP, Django, JavaScript, Node.js)
+- Frontend Development (Next.js, Svelte, Vue.js, Angular)
+
+**Platform Partnerships:**
+- ScalableMinds
+- ProtexAI
+- V7 Darwin
+- Lightly
+- Heartex
+- Segments.ai
+- Kili Technology
+- CVAT
+- Supervisely
+
+This technical stack information should be reflected in the services and capabilities sections of the website content.

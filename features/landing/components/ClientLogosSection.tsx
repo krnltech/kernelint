@@ -38,7 +38,7 @@ export function ClientLogosSection() {
               className="group animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="relative bg-white p-6 rounded-2xl border border-gray-200/60 hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-500 transform hover:-translate-y-2 h-32 flex items-center justify-center">
+              <div className="relative bg-gray-100 p-6 rounded-2xl border border-gray-200/60 hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-500 transform hover:-translate-y-2 h-32 flex items-center justify-center">
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-blue-500/3 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
@@ -58,14 +58,17 @@ export function ClientLogosSection() {
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';
-                          target.parentElement!.innerHTML = `
-                            <div class="w-full h-full flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors duration-300">
-                              <div class="text-center">
-                                <div class="text-2xl mb-2">🏢</div>
-                                <div class="text-sm font-medium">${client.name}</div>
+                          const parentElement = target.parentElement;
+                          if (parentElement) {
+                            parentElement.innerHTML = `
+                              <div class="w-full h-full flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors duration-300">
+                                <div class="text-center">
+                                  <div class="text-2xl mb-2">🏢</div>
+                                  <div class="text-sm font-medium">${client.name}</div>
+                                </div>
                               </div>
-                            </div>
-                          `;
+                            `;
+                          }
                         }}
                       />
                     </a>
@@ -78,14 +81,17 @@ export function ClientLogosSection() {
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';
-                          target.parentElement!.innerHTML = `
-                            <div class="w-full h-full flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors duration-300">
-                              <div class="text-center">
-                                <div class="text-2xl mb-2">🏢</div>
-                                <div class="text-sm font-medium">${client.name}</div>
+                          const parentElement = target.parentElement;
+                          if (parentElement) {
+                            parentElement.innerHTML = `
+                              <div class="w-full h-full flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors duration-300">
+                                <div class="text-center">
+                                  <div class="text-2xl mb-2">🏢</div>
+                                  <div class="text-sm font-medium">${client.name}</div>
+                                </div>
                               </div>
-                            </div>
-                          `;
+                            `;
+                          }
                         }}
                       />
                     </div>

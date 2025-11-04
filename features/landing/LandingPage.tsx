@@ -4,10 +4,9 @@ import {
   Header,
   HeroSection,
   AboutSection,
-  TrustedOrganizations,
   ServicesSection,
   ExpertiseSection,
-  ClientsSection,
+  TechnicalCapabilitiesSection,
   ClientLogosSection,
   PartnersSection,
   ContactSection,
@@ -27,6 +26,7 @@ export function LandingPage() {
       <AboutSection />
       <ServicesSection />
       <ExpertiseSection />
+      <TechnicalCapabilitiesSection />
       <ClientLogosSection />
       <PartnersSection />
       <ContactSection />

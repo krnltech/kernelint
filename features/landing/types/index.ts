@@ -54,3 +54,19 @@ export interface ExpertiseCategory {
   icon: LucideIcon;
   items: string[];
 }
+
+export interface Technology {
+  name: string;
+  logo: string;
+}
+
+export interface TechnicalCategory {
+  title: string;
+  technologies: Technology[];
+}
+
+export interface TechnicalCapabilities {
+  title: string;
+  description: string;
+  categories: TechnicalCategory[];
+}

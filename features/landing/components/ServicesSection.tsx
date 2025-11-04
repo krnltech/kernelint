@@ -89,10 +89,10 @@ export function ServicesSection() {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-20 animate-fade-in-up" style={{ animationDelay: "800ms" }}>
-          <div className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-primary to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer group">
+          <a href="mailto:contact@kernelinternational.com?subject=Get Started&body=Hi, I'm ready to get started with my project. Please contact me to discuss the details." className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-primary to-blue-600 text-white rounded-full hover:shadow-lg transition-all duration-300 cursor-pointer group">
             <span className="font-semibold">Ready to get started?</span>
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
-          </div>
+          </a>
         </div>
       </div>
     </section>

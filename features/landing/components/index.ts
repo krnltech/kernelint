@@ -4,6 +4,8 @@ export { AboutSection } from "./AboutSection";
 export { TrustedOrganizations } from "./TrustedOrganizations";
 export { ServicesSection } from "./ServicesSection";
 export { ExpertiseSection } from "./ExpertiseSection";
+export { TechnicalCapabilitiesSection } from "./TechnicalCapabilitiesSection";
+export { PlatformPartnersSection } from "./PlatformPartnersSection";
 export { ClientsSection } from "./ClientsSection";
 export { ClientLogosSection } from "./ClientLogosSection";
 export { PartnersSection } from "./PartnersSection";

@@ -11,8 +11,9 @@ export function Footer() {
               Kernel International
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Leading multi-disciplinary research, training and consulting 
-              service provider organization in Bangladesh.
+              KIL is a leading research, training and consulting service provider organization,
+              delivering exceptional quality services across agriculture, IT, architecture,
+              engineering, and beyond with 10+ years of excellence.
             </p>
           </div>
 
@@ -21,22 +22,22 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/about" className="text-gray-400 hover:text-white transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/services" className="text-gray-400 hover:text-white transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#expertise" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/#expertise" className="text-gray-400 hover:text-white transition-colors">
                   Expertise
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
+                <a href="/contact" className="text-gray-400 hover:text-white transition-colors">
                   Contact
                 </a>
               </li>
@@ -48,7 +49,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-white">Contact</h4>
             <div className="space-y-2 text-sm text-gray-400">
               <p>Dhaka, Bangladesh</p>
-              <p>+88028833371</p>
+              <p>+8801762694455</p>
               <p>contact@kernelinternational.com</p>
             </div>
           </div>
