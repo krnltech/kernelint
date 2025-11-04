@@ -66,6 +66,13 @@ export function Header({ scrollToContact }: HeaderProps) {
                 Services
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
+              <Link
+                href="/products/securevision"
+                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              >
+                SecureVision
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
               <a
                 href="#expertise"
                 className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
@@ -118,6 +125,13 @@ export function Header({ scrollToContact }: HeaderProps) {
               onClick={() => setIsMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              href="/products/securevision"
+              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              SecureVision
             </Link>
             <a
               href="#expertise"
