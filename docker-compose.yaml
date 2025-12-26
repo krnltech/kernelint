@@ -1,0 +1,12 @@
+name: "kernel-international-landing"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - NODE_ENV=production
+    # Port mapping is handled by Coolify's proxy; don't map external ports here
+    expose:
+      - "3000"
