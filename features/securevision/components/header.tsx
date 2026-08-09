@@ -2,35 +2,47 @@
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { ProductsMenu, ProductsMenuMobile } from "@/components/products-menu"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const links = [
+    { href: "#features", label: "Features" },
+    { href: "#solutions", label: "Solutions" },
+  ]
+
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold text-primary">SecureVision</div>
+        <Link href="/" className="text-2xl font-bold text-primary">
+          SecureVision
+        </Link>
 
         {/* Desktop Navigation */}
-        {/*<nav className="hidden md:flex gap-8 items-center">
-          <a href="#features" className="text-foreground/80 hover:text-primary transition">
-            Features
-          </a>
-          <a href="#solutions" className="text-foreground/80 hover:text-primary transition">
-            Solutions
-          </a>
-          <a href="#pricing" className="text-foreground/80 hover:text-primary transition">
-            Pricing
-          </a>
-          <a href="#contact" className="text-foreground/80 hover:text-primary transition">
+        <nav className="hidden md:flex gap-8 items-center">
+          {links.map((link) => (
+            <a key={link.href} href={link.href} className="text-foreground/80 hover:text-primary transition">
+              {link.label}
+            </a>
+          ))}
+          <ProductsMenu />
+          <Link
+            href="/contact"
+            className="bg-primary text-primary-foreground px-5 py-2 rounded-full hover:bg-primary/90 transition font-semibold text-sm"
+          >
             Contact
-          </a>
-          <Button size="sm">Get Started</Button>
-        </nav> /*}
+          </Link>
+        </nav>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+        >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -39,19 +51,24 @@ export function Header() {
       {isOpen && (
         <nav className="md:hidden border-t border-border bg-card">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            <a href="#features" className="text-foreground/80 hover:text-primary transition">
-              Features
-            </a>
-            <a href="#solutions" className="text-foreground/80 hover:text-primary transition">
-              Solutions
-            </a>
-            <a href="#pricing" className="text-foreground/80 hover:text-primary transition">
-              Pricing
-            </a>
-            <a href="#contact" className="text-foreground/80 hover:text-primary transition">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-foreground/80 hover:text-primary transition"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+            <ProductsMenuMobile onNavigate={() => setIsOpen(false)} />
+            <Link
+              href="/contact"
+              className="bg-primary text-primary-foreground px-5 py-2 rounded-full hover:bg-primary/90 transition font-semibold text-sm text-center"
+              onClick={() => setIsOpen(false)}
+            >
               Contact
-            </a>
-            <Button className="w-full">Get Started</Button>
+            </Link>
           </div>
         </nav>
       )}

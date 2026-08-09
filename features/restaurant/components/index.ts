@@ -1,0 +1,12 @@
+export { Header } from "./header";
+export { Hero } from "./hero";
+export { PlatformOverview } from "./platform-overview";
+export { Features } from "./features";
+export { ScreenshotShowcase } from "./screenshot-showcase";
+export { Promotions } from "./promotions";
+export { BackOffice } from "./back-office";
+export { StaffAndRoles } from "./staff-and-roles";
+export { Stats } from "./stats";
+export { UseCases } from "./use-cases";
+export { CTA } from "./cta";
+export { Footer } from "./footer";

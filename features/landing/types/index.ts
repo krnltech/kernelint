@@ -70,3 +70,13 @@ export interface TechnicalCapabilities {
   description: string;
   categories: TechnicalCategory[];
 }
+
+export interface Product {
+  icon: LucideIcon;
+  name: string;
+  tagline: string;
+  description: string;
+  highlights: string[];
+  href: string;
+  color: string;
+}

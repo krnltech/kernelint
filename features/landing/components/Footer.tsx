@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { companyInfo } from "../data/landing-data";
 
 export function Footer() {
@@ -7,9 +8,13 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent mb-4">
-              Kernel International
-            </h3>
+            <Image
+              src="/kernel-logo-white.svg"
+              alt="Kernel International Ltd."
+              width={577}
+              height={456}
+              className="h-24 w-auto mb-4"
+            />
             <p className="text-gray-400 text-sm leading-relaxed">
               KIL is a leading research, training and consulting service provider organization,
               delivering exceptional quality services across agriculture, IT, architecture,
@@ -32,6 +37,16 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/products/restaurant" className="text-gray-400 hover:text-white transition-colors">
+                  Kernel Restaurant Suite
+                </a>
+              </li>
+              <li>
+                <a href="/products/securevision" className="text-gray-400 hover:text-white transition-colors">
+                  SecureVision
+                </a>
+              </li>
+              <li>
                 <a href="/#expertise" className="text-gray-400 hover:text-white transition-colors">
                   Expertise
                 </a>
@@ -49,7 +64,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-white">Contact</h4>
             <div className="space-y-2 text-sm text-gray-400">
               <p>Dhaka, Bangladesh</p>
-              <p>+8801762694455</p>
+              <p>+880 1348-061944</p>
               <p>contact@kernelinternational.com</p>
             </div>
           </div>

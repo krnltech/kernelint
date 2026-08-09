@@ -22,6 +22,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  // Needed so Open Graph images on product pages resolve to absolute URLs.
+  // Override per environment with NEXT_PUBLIC_SITE_URL.
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kernelinternational.com"
+  ),
   title: "Kernel International Limited | AI-Powered Solutions, Research, Training & Consulting",
   description: "KIL is a leading research, training and consulting service provider organization, delivering exceptional quality services across agriculture, AI-powered custom software development, IT, architecture, engineering, and beyond with 10+ years of excellence.",
 };

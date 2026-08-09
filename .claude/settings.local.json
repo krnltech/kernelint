@@ -4,7 +4,10 @@
       "Bash(cp:*)",
       "Bash(mkdir:*)",
       "Bash(npm run build:*)",
-      "Bash(timeout 10 npm run dev)"
+      "Bash(timeout 10 npm run dev)",
+      "Bash(grep -E \"^#{1,3} \" POS_User_Manual/docs/USER_MANUAL.md)",
+      "Bash(grep -E \"^#{1,3} \" UserApp/docs/USER_MANUAL.md)",
+      "Bash(node -e \"require.resolve\\('sharp'\\); console.log\\('sharp available'\\)\")"
     ],
     "deny": [],
     "ask": []

@@ -1,3 +1,6 @@
+import Image from "next/image"
+import Link from "next/link"
+
 export function Footer() {
   return (
     <footer className="bg-card border-t border-border">
@@ -68,8 +71,24 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-border pt-8 text-center text-foreground/60">
-          <p>&copy; 2025 SecureVision. All rights reserved.</p>
+        <div className="border-t border-border pt-8 flex flex-col items-center gap-4 text-foreground/60">
+          <Link href="/">
+            <Image
+              src="/kernel-logo.svg"
+              alt="Kernel International Ltd."
+              width={577}
+              height={456}
+              className="h-16 w-auto dark:hidden"
+            />
+            <Image
+              src="/kernel-logo-white.svg"
+              alt="Kernel International Ltd."
+              width={577}
+              height={456}
+              className="h-16 w-auto hidden dark:block"
+            />
+          </Link>
+          <p>&copy; {new Date().getFullYear()} Kernel International Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# product source assets (raw screenshots & manuals) - only the optimized
+# copies under public/products/ are committed
+/Restaurant-POS
+/securevision
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

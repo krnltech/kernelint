@@ -444,6 +444,31 @@
   opacity: 0;
 }
 
+/* Slim, themed scrollbar for the product screenshot frames. Full-page captures
+   are very tall, so the frames scroll internally — the default OS scrollbar
+   sits awkwardly against their rounded borders. */
+.showcase-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--primary) 45%, transparent) transparent;
+}
+
+.showcase-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.showcase-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.showcase-scroll::-webkit-scrollbar-thumb {
+  background-color: color-mix(in oklab, var(--primary) 40%, transparent);
+  border-radius: 9999px;
+}
+
+.showcase-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: color-mix(in oklab, var(--primary) 65%, transparent);
+}
+
 html {
   scroll-behavior: smooth;
 }

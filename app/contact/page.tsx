@@ -1,149 +1,10 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { Menu, X, MapPin, Phone, Mail, Building2, Clock, Globe, Shield, Award, MessageCircle } from "lucide-react";
-import Link from "next/link";
-import { Footer } from "../../features/landing/components";
-
-function PageHeader() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <header
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/50 backdrop-blur-lg shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center animate-fade-in-left">
-            <div className="flex-shrink-0">
-              <Link href="/">
-                <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent cursor-pointer">
-                  Kernel International
-                </h1>
-                <div className="text-xs text-gray-500 font-mono tracking-wider">
-                  EST. 2013
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:block animate-fade-in-up">
-            <div className="flex items-center space-x-12">
-              <Link
-                href="/"
-                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
-              >
-                Home
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link
-                href="/about"
-                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
-              >
-                About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link
-                href="/services"
-                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
-              >
-                Services
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link
-                href="/#expertise"
-                className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
-              >
-                Expertise
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link
-                href="/contact"
-                className="text-primary font-medium relative group"
-              >
-                Contact
-                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary"></span>
-              </Link>
-            </div>
-          </nav>
-
-          {/* Mobile menu button */}
-          <button
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div
-          className={`lg:hidden transition-all duration-300 ${
-            isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
-          } overflow-hidden bg-white/95 backdrop-blur-md`}
-        >
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link
-              href="/"
-              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/services"
-              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link
-              href="/#expertise"
-              className="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Expertise
-            </Link>
-            <Link
-              href="/contact"
-              className="block px-3 py-2 text-primary font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
-}
+import { MapPin, Phone, Mail, Building2, Clock, Globe, Shield, Award, MessageCircle } from "lucide-react";
+import { Footer, Header } from "../../features/landing/components";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-slate-50">
-      <PageHeader />
+      <Header />
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-white to-blue-500/5 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -213,7 +74,7 @@ export default function ContactPage() {
                   <Phone className="text-primary" size={18} />
                   <div>
                     <p className="font-semibold text-gray-900">Office Phone</p>
-                    <p className="text-gray-700">+8801762694455</p>
+                    <p className="text-gray-700">+880 1348-061944</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -463,9 +324,9 @@ export default function ContactPage() {
               multi-disciplinary expertise and proven track record.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+8801762694455" className="bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-semibold inline-flex items-center gap-2">
+              <a href="tel:+8801348061944" className="bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 font-semibold inline-flex items-center gap-2">
                 <Phone size={18} />
-                Call Now: +8801762694455
+                Call Now: +880 1348-061944
               </a>
               <a href="mailto:contact@kernelinternational.com" className="border border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-semibold inline-flex items-center gap-2">
                 <Mail size={18} />

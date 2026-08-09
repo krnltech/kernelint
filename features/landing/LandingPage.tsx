@@ -5,6 +5,7 @@ import {
   HeroSection,
   AboutSection,
   ServicesSection,
+  ProductsSection,
   ExpertiseSection,
   TechnicalCapabilitiesSection,
   ClientLogosSection,
@@ -14,17 +15,13 @@ import {
 } from "./components";
 
 export function LandingPage() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    contactSection?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <main className="min-h-screen bg-white overflow-hidden">
-      <Header scrollToContact={scrollToContact} />
+      <Header active="home" />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <ProductsSection />
       <ExpertiseSection />
       <TechnicalCapabilitiesSection />
       <ClientLogosSection />

@@ -12,6 +12,8 @@ import {
   Phone,
   Mail,
   MapPin,
+  UtensilsCrossed,
+  ScanEye,
 } from "lucide-react";
 
 import type {
@@ -23,7 +25,41 @@ import type {
   TrustedOrganization,
   ExpertiseCategory,
   ClientLogo,
+  Product,
 } from "../types";
+
+export const products: Product[] = [
+  {
+    icon: UtensilsCrossed,
+    name: "Kernel Restaurant Suite",
+    tagline: "Complete Restaurant Management",
+    description:
+      "Point of sale, admin back office, iOS and Android customer app, and online ordering — connected into one system, so the menu, the stock and the numbers only ever live in one place.",
+    highlights: [
+      "Offline-capable POS",
+      "Inventory & multi-branch reporting",
+      "Promotions & loyalty",
+      "Web + mobile ordering",
+    ],
+    href: "/products/restaurant",
+    color: "amber",
+  },
+  {
+    icon: ScanEye,
+    name: "SecureVision",
+    tagline: "AI-Powered Security Monitoring",
+    description:
+      "Real-time computer vision surveillance for homes, shops, markets, offices and industrial facilities, detecting threats as they happen rather than after the fact.",
+    highlights: [
+      "Real-time video analysis",
+      "Object & behaviour recognition",
+      "Proactive threat alerts",
+      "Intelligent analytics",
+    ],
+    href: "/products/securevision",
+    color: "blue",
+  },
+];
 
 export const heroStats: Statistic[] = [
   {
@@ -200,7 +236,7 @@ export const contactInfo: ContactInfo[] = [
   {
     icon: Phone,
     title: "Phone",
-    content: "+8801762694455",
+    content: "+880 1348-061944",
   },
   {
     icon: Mail,

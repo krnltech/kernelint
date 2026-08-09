@@ -3,6 +3,7 @@ export { HeroSection } from "./HeroSection";
 export { AboutSection } from "./AboutSection";
 export { TrustedOrganizations } from "./TrustedOrganizations";
 export { ServicesSection } from "./ServicesSection";
+export { ProductsSection } from "./ProductsSection";
 export { ExpertiseSection } from "./ExpertiseSection";
 export { TechnicalCapabilitiesSection } from "./TechnicalCapabilitiesSection";
 export { PlatformPartnersSection } from "./PlatformPartnersSection";
