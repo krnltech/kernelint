@@ -60,7 +60,7 @@ export function Header({ active }: HeaderProps) {
                   className="h-11 w-auto"
                 />
                 <span>
-                  <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent cursor-pointer">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent cursor-pointer">
                     Kernel International
                   </h1>
                   <span className="block text-xs text-gray-500 font-mono tracking-wider">
